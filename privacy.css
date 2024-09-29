@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7e9; /* Light green background */
+    color: #2d2d2d; /* Dark grey text for readability */
+    margin: 0;
+    padding: 20px;
+}
+
+.privacy-statement-section {
+    background-color: #f0fff4; /* Soft green for section background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2e7d32; /* Dark green for main heading */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #388e3c; /* Medium green for subheadings */
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #1b5e20; /* Dark green for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

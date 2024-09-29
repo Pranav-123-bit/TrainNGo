@@ -1,0 +1,23 @@
+footer {
+    background-color: #7adc1f; /* Light grey background */
+    color: #333333; /* Dark text color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-help {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-help h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-help p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  

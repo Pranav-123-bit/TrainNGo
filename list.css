@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#train-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#train-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #0ff096;
+    cursor: pointer;
+}
+
+#train-list li:hover {
+    background-color: #8bf581;
+}
+
+#train-info {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #d4f738;
+}

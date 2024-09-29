@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Train Here</title>
+    <link rel="stylesheet" href="booktrain.css">
+</head>
+<body>
+    <h1>Book Your Train Here</h1>
+    <div class="form-container">
+        <div class="dashboard">
+            <label for="pickup">Pickup Point:</label>
+            <select id="pickup">
+                <option value="city1">karnataka</option>
+                <option value="city2">maharastra</option>
+                <option value="city3">kerala</option>
+                <option value="city4">Goa</option>
+                <option value="city5">Delhi</option>
+                <option value="city6">madhya pradesh</option>
+                <option value="city7">Rajasthan</option>
+                <option value="city8">Gujurat</option>
+                <option value="city9">kashmir</option>
+                <option value="city10">bihar</option>
+            </select>
+        </div>
+        <div class="dashboard">
+            <label for="drop">Dropping Point:</label>
+            <select id="drop">
+                <option value="city1">karnataka</option>
+                <option value="city2">maharastra</option>
+                <option value="city3">kerala</option>
+                <option value="city4">Goa</option>
+                <option value="city5">Delhi</option>
+                <option value="city6">madhya pradesh</option>
+                <option value="city7">Rajasthan</option>
+                <option value="city8">Gujurat</option>
+                <option value="city9">kashmir</option>
+                <option value="city10">bihar</option>
+            </select>
+        </div>
+        <div class="dashboard">
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+        </div>
+        <div class="dashboard">
+            <label for="passengers">Number of Passengers:</label>
+            <input type="number" id="passengers" min="1" max="10" placeholder="number of passengers">
+        </div>
+        <button id="search">Search Trains</button>
+    </div>
+    <div id="results"></div>
+    <div id="passenger-details" style="display:none;">
+        <h2>Passenger Details</h2>
+        <div id="passenger-forms"></div>
+        <button id="proceed-payment">Proceed to Payment</button>
+    </div>
+    <div id="payment" style="display:none;">
+        <h2>Payment Options</h2>
+        <label for="payment-method">Choose Payment Method:</label>
+        <select id="payment-method">
+            <option value="upi">UPI</option>
+            <option value="netbanking">Net Banking</option>
+            <option value="creditcard">Credit Card</option>
+        </select>
+        <button id="pay">Pay</button>
+    </div>
+    <div id="ticket" style="display:none;">
+        <h2>Ticket</h2>
+        <p id="ticketDetails"></p>
+        <button onclick="window.print()">Print Ticket</button>
+    </div>
+    <script src="booktrain.js"></script>
+</body>
+</html>

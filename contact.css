@@ -1,0 +1,31 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p{
+    text-align: center;
+    text-decoration-color: chartreuse;
+
+}
+
+footer {
+    background-color: #16ec3a;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contact a {
+    color: #251b0e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}

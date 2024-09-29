@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4caf50; /* Green background */
+    color: #333; /* Dark grey text for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff; /* White color for the heading */
+}
+
+.form-container {
+    width: 50%; /* Adjusted width for better alignment */
+    margin: 0 auto;
+    background: #ffffff; /* White background for the form */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.dashboard {
+    margin-bottom: 15px;
+    width: 80%; /* Smaller width for dashboards */
+    margin: 0 auto; /* Center align dashboards */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff; /* White color for labels */
+}
+
+select, input[type="date"], input[type="number"], button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    background: #f9f9f9; /* Light grey background for inputs */
+    color: #333; /* Dark grey text */
+}
+
+button {
+    background-color: #00796b; /* Teal background for buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+#results, #passenger-details, #payment, #ticket {
+    display: none;
+    margin-top: 20px;
+}
+
+#results div {
+    margin-bottom: 10px;
+    background: #f1f1f1; /* Light grey background for results */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#results div input[type="radio"] {
+    margin-right: 10px;
+}
+
+#passenger-forms div {
+    margin-bottom: 10px;
+    background: #f1f1f1; /* Light grey background for forms */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#passenger-forms div label {
+    flex: 1 1 100%;
+    color: #333; /* Dark grey color for passenger labels */
+}
+
+#passenger-forms div input, #passenger-forms div select {
+    flex: 1 1 calc(33.333% - 10px);
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #ticket, #ticket * {
+        visibility: visible;
+    }
+    #ticket {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+}
