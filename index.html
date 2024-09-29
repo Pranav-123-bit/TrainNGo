@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Booking</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header>
+        <h1>TrainNGo</h1>
+        <p>Welcome to TrainNGo! A user-friendly and easy train booking website where you can book your trains,
+            <br>
+            with lower prices and easy, fully refundable access with zero percent brokerage charge.
+        </p>
+        <img src="C:\Users\ASUS\Downloads\gghffgg\train.jpg" width="1000px" alt="Train Image">
+    </header>
+    
+  
+    
+    <main>
+        <a href="booktrain.html"><button id="bookTrain">Book Train</button></a>
+        <a href="list.html"><button id="listTrains">List of Trains</button></a>
+
+        
+        <p style="text-align: center;" color="black">Here u can book ur train according to ur date and time, as per ur cost and budget 
+            <br>
+            and the list of train is also given from which u can book ur trian or keep ideas about the train's date and time for future journey
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>    
+        <div class="gallery">
+            <div class="image-container">
+                <img src="C:\Users\ASUS\Downloads\gghffgg\pranav.jpg" alt="Image 1" class="image">
+                <p class="image-name">Founder: Pranav</p>
+                <div class="image-info">He is the founder of the platform and he made this website into existence in 2010. He has done B.E in computer science.</div>
+            </div>
+            <div class="image-container">
+                <img src="C:\Users\ASUS\Downloads\gghffgg\lata.jpg" alt="Image 2" class="image">
+                <p class="image-name">CEO: Lata</p>
+                <div class="image-info">She is the CEO of the website, has put all her efforts in making the company reach its peak level. She holds a degree of Doctor of Pharmacy.</div>
+            </div>
+            <div class="image-container">
+                <img src="C:\Users\ASUS\Downloads\gghffgg\swaroop.jpg" alt="Image 3" class="image">
+                <p class="image-name">Manager: Swaroop</p>
+                <div class="image-info">He is the working manager of the company and has the potential to work beyond our expectations. He has a degree of B.E in Electronics and Communication.</div>
+            </div>
+            <div class="image-container">
+                <img src="C:\Users\ASUS\Downloads\gghffgg\sahitya.jpg" alt="Image 4" class="image">
+                <p class="image-name">Designer: Sahitya</p>
+                <div class="image-info">She is one of the most creative-minded individuals and has taken the website's structure to the next level. She holds a degree of B.Arch.</div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <footer>
+        <a href="help.html"><button id="help">Help</button></a>
+        <a href="contact.html"><button id="contact">Contact us</button></a>
+        <a href="term.html"><button id="term">Terms of Use</button></a>
+        <a href="privacy.html"><button id="privacy">Privacy Statement</button></a>
+        
+    </footer>
+    
+    <script src="script.js">document.getElementById('icon').addEventListener('click', function() {
+        document.getElementById('videoPopup').style.display = 'flex';
+    });
+    
+    document.getElementById('close').addEventListener('click', function() {
+        document.getElementById('videoPopup').style.display = 'none';
+    });
+    </script>
+    <script src="scripts.js">document.querySelectorAll('.image').forEach(image => {
+        image.addEventListener('mouseover', () => {
+            image.nextElementSibling.nextElementSibling.style.display = 'block';
+        });
+        image.addEventListener('mouseout', () => {
+            image.nextElementSibling.nextElementSibling.style.display = 'none';
+        });
+    });
+    </script>
+</body>
+</html>
